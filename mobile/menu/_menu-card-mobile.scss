@@ -1,0 +1,36 @@
+.menu {
+
+    // images
+
+    &__box {
+        position: relative;
+    }
+
+    &__box:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    // text
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        margin: 0;
+
+        white-space: nowrap;
+
+        font-family: Alegreya;
+        font-size: 39px;
+        font-weight: 400;
+
+        color: $main-text-color;
+    }
+}
