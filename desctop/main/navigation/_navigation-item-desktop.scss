@@ -1,0 +1,24 @@
+.nav {
+    @media screen and (min-width: $desktop) {
+        &__item {
+            padding: 9px 75px;
+
+            border-radius: 150px;
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        // text
+
+        &__title {
+            font-size: 60px;
+        }
+
+        &__text {
+            font-size: 45px;
+        }
+
+    }
+}

@@ -1,0 +1,18 @@
+.messenger {
+    @media screen and (min-width: $desktop) {
+        &__text {
+            font-size: 50px;
+        }
+
+        &__text:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &__icon {
+            width: 85px;
+            height: 85px;
+
+            margin-bottom: 10px;
+        }
+    }
+}

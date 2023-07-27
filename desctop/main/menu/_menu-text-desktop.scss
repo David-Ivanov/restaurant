@@ -1,0 +1,13 @@
+.menu {
+    @media screen and (min-width: $desktop) {
+        &__title {
+            margin-bottom: 86px;
+
+            font-size: 116px;
+        }
+
+        &__text {
+            font-size: 50px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.menu {
+    @media screen and (min-width: $desktop) {
+        &__img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        &__box:not(:last-child) {
+            margin-right: 106px;
+        }
+    }
+}

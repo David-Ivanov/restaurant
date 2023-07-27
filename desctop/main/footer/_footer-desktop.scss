@@ -1,0 +1,7 @@
+.footer {
+    @media screen and (min-width: $desktop) {
+        padding: 71px 0;
+
+        justify-content: space-around;
+    }
+}

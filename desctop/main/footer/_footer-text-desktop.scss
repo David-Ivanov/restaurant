@@ -1,0 +1,11 @@
+.footer {
+    @media screen and (min-width: $desktop) {
+        &__title {
+            font-size: 50px;
+        }
+
+        &__text {
+            font-size: 28px;
+        }
+    }
+}
