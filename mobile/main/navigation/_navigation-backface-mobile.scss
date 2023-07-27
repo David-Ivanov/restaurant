@@ -1,0 +1,56 @@
+.nav {
+    &__backface {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        display: flex;
+        justify-content: end;
+
+        padding: 20px 20px 0 0;
+
+        opacity: 0;
+
+        transition: opacity 250ms ease-in;
+
+        pointer-events: none;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(0, 0, 0, 0.31);
+    }
+
+    // button 
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0;
+        margin: 0;
+
+        width: 50px;
+        height: 50px;
+
+        border: 0;
+        background-color: transparent;
+
+    }
+
+    &__close {
+        width: 50px;
+        height: 50px;
+    }
+
+    // active
+
+    &__backface--active {
+        opacity: 1;
+
+        pointer-events: all;
+
+    }
+}

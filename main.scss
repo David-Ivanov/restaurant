@@ -1,20 +1,32 @@
-@import "utilits/varibles";
-@import "utilits/base";
+@import "./utilits/varibles";
+@import "./utilits/base";
 
 // mobile
 
 // header
 
-@import "mobile/header/logo-mobile";
-@import "mobile/header/hotbar-mobile";
+@import "./mobile/main/header/logo-mobile";
+@import "./mobile/main/header/hotbar-mobile";
 
 // map
 
-@import "mobile/map/map-mobile";
-@import "mobile/map/map-text-mobile";
-@import "mobile/map/map-gps-mobile";
+@import "./mobile/main/map/map-mobile";
+@import "./mobile/main/map/map-text-mobile";
+@import "./mobile/main/map/map-gps-mobile";
 
 // menu
 
-@import "mobile/menu/menu-mobile";
-@import "mobile/menu/menu-card-mobile";
+@import "./mobile/main/menu/menu-mobile";
+@import "./mobile/main/menu/menu-card-mobile";
+
+//footer 
+
+@import "./mobile/main/footer/footer-mobile";
+@import "./mobile/main/footer/footer-text";
+@import "./mobile/main/footer/footer-messenger";
+
+// navigation 
+
+@import "./mobile/main/navigation/navigation-mobile";
+@import "./mobile/main/navigation/navigation-item-mobile";
+@import "./mobile/main/navigation/navigation-backface-mobile";

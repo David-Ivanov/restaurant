@@ -1,0 +1,21 @@
+.footer {
+    &__title {
+        margin: 0 0 3px;
+
+        font-family: Akshar;
+        font-size: 17.897px;
+        font-weight: 400;
+
+        color: $main-text-color;
+    }
+
+    &__text {
+        margin: 0;
+
+        font-family: Akshar;
+        font-size: 10px;
+        font-weight: 400;
+
+        color: $main-text-color;
+    }
+}

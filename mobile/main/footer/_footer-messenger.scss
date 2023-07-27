@@ -1,0 +1,28 @@
+.messenger {
+    &__text {
+        text-align: center;
+
+        margin: 0 0 3px;
+
+        font-family: Akshar;
+        font-size: 17px;
+        font-weight: 400;
+
+        color: $secondly-text-color;
+    }
+
+    &__icon {
+        display: block;
+        margin: 0 auto 3px;
+
+        width: 28px;
+        height: 28px;
+
+        fill: #eeaa21;
+    }
+
+    &__icon:hover {
+        fill: #FF0002;
+        stroke: #FF0002;
+    }
+}

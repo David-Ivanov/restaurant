@@ -43,47 +43,58 @@
                 <div class="menu__box">
                     <img class="menu__img" src="images/china-food.jpg"
                         srcset="images/china-food.jpg 1x, images/china-food@2x.jpg 2x" alt="china-food">
-                    <p class="menu__text">КИТАЙСЬКА КУХНЯ</p>
+                    <h2 class="menu__text">КИТАЙСЬКА КУХНЯ</h2>
                 </div>
             </a>
             <a href="">
                 <div class="menu__box">
                     <img class="menu__img" src="images/sushi.jpg" srcset="images/sushi.jpg 1x, images/sushi@2x.jpg 2x"
                         alt="sushi">
-                    <p class="menu__text">СУШІ</p>
+                    <h2 class="menu__text">СУШІ</h2>
                 </div>
             </a>
         </section>
     </main>
-    <footer>
-        <div>
-            <h1>China delicacy</h1>
-            <p>Ресторан китайської кухні</p>
+    <footer class="footer">
+        <div class="footer__box">
+            <h1 class="footer__title">China delicacy</h1>
+            <p class="footer__text">Ресторан китайської кухні</p>
         </div>
-        <div>
-            <p>ЛАСКОВО ПРОСИМО У НАШ</p>
-            <a href="">
-                <svg>
+        <div class="messenger">
+            <p class="messenger__text">ЛАСКОВО ПРОСИМО У НАШ</p>
+            <a href="https://www.instagram.com/delicacychina/">
+                <svg class="messenger__icon">
                     <use href="images/symbol-defs.svg#icon-instagram">
                     </use>
                 </svg>
             </a>
-            <p>INSTAGRAM</p>
+            <p class="messenger__text">INSTAGRAM</p>
         </div>
     </footer>
-    <div>
-        <button>
-            <svg class="">
+    <div class="nav">
+        <div class="nav__box">
+            <a class="nav__link" href="">
+                <div class="nav__item">
+                    <h1 class="nav__title">КИТАЙСЬКА КУХНЯ</h1>
+                    <p class="nav__text">China food</p>
+                </div>
+            </a>
+            <a class="nav__link" href="">
+                <div class="nav__item last">
+                    <h1 class="nav__title">СУШІ</h1>
+                    <p class="nav__text">Sushi</p>
+                </div>
+        </div>
+        </a>
+    </div>
+    <div class="nav__backface">
+        <button class="nav__btn">
+            <svg class="nav__close">
                 <use href="images/symbol-defs.svg#cross"></use>
             </svg>
         </button>
-        <div>
-            <p>КИТАЙСЬКА КУХНЯ</p>
-        </div>
-        <div>
-            <p>СУШІ</p>
-        </div>
     </div>
+    <script src="navigation.js"></script>
 </body>
 
 </html>
