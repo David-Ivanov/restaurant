@@ -1,0 +1,9 @@
+.logo {
+    @media screen and (min-width: $desktop) {
+        width: 676px;
+
+        &__text {
+            font-size: 40px;
+        }
+    }
+}

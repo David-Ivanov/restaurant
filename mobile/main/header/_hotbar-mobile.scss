@@ -56,4 +56,13 @@
 
         color: $secondly-text-color;
     }
+
+    // desktop
+
+    &__btn-desktop,
+    &__icon-desktop,
+    &__address-desktop,
+    &__tel-desktop {
+        display: none;
+    }
 }
