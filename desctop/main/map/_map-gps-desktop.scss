@@ -1,0 +1,10 @@
+.map {
+    @media screen and (min-width: $desktop) {
+
+
+        &__gps {
+            width: 540px;
+            height: 435px;
+        }
+    }
+}

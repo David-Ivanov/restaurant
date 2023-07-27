@@ -72,19 +72,20 @@ a {
 .map {
   padding-top: 45px;
   padding-bottom: 85px;
-  background-image: url(../../../images/map-bg-mobile.jpg);
+  background-image: url(images/map-bg-mobile.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .map {
-    background-image: url(../../../images/map-bg-mobile@2x.jpg);
+    background-image: url(images/map-bg-mobile@2x.jpg);
   }
 }
 
 .map__title {
   text-align: center;
   margin-bottom: 15px;
+  margin-top: 0;
   font-family: Kadwa;
   font-size: 16px;
   font-weight: 700;
@@ -99,13 +100,13 @@ a {
 
 .menu {
   padding: 25px 20px;
-  background-image: url(../../../images/menu-bg-mobile.jpg);
+  background-image: url(images/menu-bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .menu {
-    background-image: url(../../../images/menu-bg-mobile@2x.jpg);
+    background-image: url(images/menu-bg-mobile@2x.jpg);
   }
 }
 .menu__title {
@@ -317,5 +318,31 @@ a {
   }
   .hotbar__box, .hotbar__tel {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map {
+    padding: 135px 0 258px;
+    background-image: url("images/map-bg-desktop.jpg");
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ration: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .map {
+    background-image: url(images/map-bg-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map__gps {
+    width: 540px;
+    height: 435px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map__title {
+    font-size: 48px;
+    margin-bottom: 48px;
   }
 }/*# sourceMappingURL=main.css.map */

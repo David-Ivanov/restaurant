@@ -1,0 +1,10 @@
+.map {
+    @media screen and (min-width: $desktop) {
+
+
+        &__title {
+            font-size: 48px;
+            margin-bottom: 48px;
+        }
+    }
+}
