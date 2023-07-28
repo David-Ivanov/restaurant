@@ -1,6 +1,6 @@
 .map {
 
-    background-image: url(images/map-bg-mobile.jpg);
+    background-image: url(../images/map-bg-mobile.jpg);
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -8,6 +8,6 @@
     @media screen and (min-device-pixel-ration: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image: url(images/map-bg-mobile@2x.jpg);
+        background-image: url(../images/map-bg-mobile@2x.jpg);
     }
 }

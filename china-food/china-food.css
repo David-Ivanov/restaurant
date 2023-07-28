@@ -71,13 +71,13 @@ a {
 }
 
 .map {
-  background-image: url(images/map-bg-mobile.jpg);
+  background-image: url(../images/map-bg-mobile.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .map {
-    background-image: url(images/map-bg-mobile@2x.jpg);
+    background-image: url(../images/map-bg-mobile@2x.jpg);
   }
 }
 
@@ -103,13 +103,13 @@ a {
 
 .menu {
   padding: 25px 20px;
-  background-image: url(images/menu-bg-mobile.jpg);
+  background-image: url(../images/menu-bg-china-food-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .menu {
-    background-image: url(images/menu-bg-mobile@2x.jpg);
+    background-image: url(../images/menu-bg-china-food-mobile@2x.jpg);
   }
 }
 .menu__title {
@@ -328,15 +328,14 @@ a {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .map {
-    padding: 135px 0 258px;
-    background-image: url("images/map-bg-desktop.jpg");
-  }
+.map {
+  background-image: url(../images/map-bg-desktop.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
-@media screen and (min-width: 1440px) and (min-device-pixel-ration: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .map {
-    background-image: url(images/map-bg-desktop@2x.jpg);
+    background-image: url(../images/map-bg-desktop@2x.jpg);
   }
 }
 
@@ -351,44 +350,6 @@ a {
   .map__title {
     font-size: 48px;
     margin-bottom: 48px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .menu {
-    padding: 50px 106px 80px;
-    background-image: url(images/menu-bg-desktop.jpg);
-  }
-}
-@media screen and (min-width: 1440px) and (min-device-pixel-ration: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-  .menu {
-    background-image: url(images/menu-bg-desktop@2x.jpg);
-  }
-}
-@media screen and (min-width: 1440px) {
-  .menu__position {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .menu__title {
-    margin-bottom: 86px;
-    font-size: 116px;
-  }
-  .menu__text {
-    font-size: 50px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .menu__img {
-    height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .menu__box:not(:last-child) {
-    margin-right: 106px;
   }
 }
 
@@ -447,4 +408,4 @@ a {
     width: 110px;
     height: 110px;
   }
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=china-food.css.map */
