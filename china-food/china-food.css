@@ -129,6 +129,9 @@ a {
 }
 .menu__img {
   width: 100%;
+  height: 161px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 .menu__text {
@@ -350,6 +353,49 @@ a {
   .map__title {
     font-size: 48px;
     margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menu {
+    padding: 50px 106px 80px;
+    background-image: url(../images/menu-bg-china-food-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ration: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .menu {
+    background-image: url(../images/menu-bg-china-food-desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu__position {
+    display: flex;
+  }
+  .menu__title {
+    font-size: 180px;
+    margin-bottom: 134px;
+  }
+  .menu__text {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menu__position {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .menu__img {
+    width: 542px;
+    height: 397px;
+    border-radius: 60px;
+  }
+  .menu__box:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .menu__box:not(:nth-last-child(-n+2)) {
+    margin-bottom: 50px;
   }
 }
 

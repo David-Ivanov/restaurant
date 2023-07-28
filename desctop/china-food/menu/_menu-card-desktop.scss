@@ -1,0 +1,23 @@
+.menu {
+    @media screen and (min-width: $desktop) {
+        &__position {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        &__img {
+            width: 542px;
+            height: 397px;
+            border-radius: 60px;
+        }
+
+        &__box:nth-last-child(-n+2) {
+            margin-bottom: 0;
+        }
+
+        &__box:not(:nth-last-child(-n+2)) {
+            margin-bottom: 50px;
+        }
+    }
+}

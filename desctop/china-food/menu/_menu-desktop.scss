@@ -1,0 +1,28 @@
+.menu {
+    @media screen and (min-width: $desktop) {
+        padding: 50px 106px 80px;
+
+        background-image: url(../images/menu-bg-china-food-desktop.jpg);
+
+        @media screen and (min-device-pixel-ration: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../images/menu-bg-china-food-desktop@2x.jpg);
+        }
+
+        &__position {
+            display: flex;
+        }
+
+        // text
+
+        &__title {
+            font-size: 180px;
+            margin-bottom: 134px;
+        }
+
+        &__text {
+            font-size: 100px;
+        }
+    }
+}

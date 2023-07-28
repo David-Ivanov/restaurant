@@ -129,6 +129,9 @@ a {
 }
 .menu__img {
   width: 100%;
+  height: 161px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 .menu__text {
