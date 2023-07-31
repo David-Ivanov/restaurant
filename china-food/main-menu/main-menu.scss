@@ -1,0 +1,72 @@
+@import "../../utilits/varibles";
+@import "../../utilits/base";
+
+// mobile
+
+// header 
+
+@import "../../mobile/main/header/logo-mobile";
+@import "../../mobile/main/header/hotbar-mobile";
+
+// map
+
+@import "../../mobile/main-menu/map/map-mobile";
+@import "../../mobile/main/map/map-text-mobile";
+@import "../../mobile/main/map/map-gps-mobile";
+
+// menu
+
+@import "../../mobile/main-menu/menu/menu-mobile";
+@import "../../mobile/main-menu/menu/menu-text-mobile";
+@import "../../mobile/main-menu/menu/chapter/chapter-mobile";
+@import "../../mobile/main-menu/menu/chapter/chapter-head-mobile";
+@import "../../mobile/main-menu/menu/chapter/chapter-item-mobile";
+@import "../../mobile/main-menu/menu/chapter/chapter-text-mobile";
+@import "../../mobile/main-menu/menu/chapter/chapter-image-mobile";
+
+// footer
+
+@import "../../mobile/main/footer/footer-mobile";
+@import "../../mobile/main/footer/footer-text";
+@import "../../mobile/main/footer/footer-messenger";
+
+// navigation 
+
+@import "../../mobile/main/navigation/navigation-mobile";
+@import "../../mobile/main/navigation/navigation-item-mobile";
+@import "../../mobile/main/navigation/navigation-backface-mobile";
+
+// desctop
+
+// header
+
+@import "../../desctop/main/header/logo-desctop";
+@import "../../desctop/main/header/hotbar-desctop";
+
+// map
+
+@import "../../desctop/main-menu/map/map-desktop";
+@import "../../desctop/main/map/map-gps-desktop";
+@import "../../desctop/main/map/map-text-desktop";
+
+// menu
+
+@import "../../desctop/main-menu/menu/menu-desktop";
+@import "../../desctop/main-menu/menu/menu-text-desktop";
+@import "../../desctop/main-menu/menu/chapter/chapter-desktop";
+@import "../../desctop/main-menu/menu/chapter/chapter-head-desktop";
+@import "../../desctop/main-menu/menu/chapter/chapter-item-desktop";
+@import "../../desctop/main-menu/menu/chapter/chapter-text-desktop";
+@import "../../desctop/main-menu/menu/chapter/chapter-image-desktop";
+
+// footer 
+
+@import "../../desctop/main/footer/footer-desktop";
+@import "../../desctop/main/footer/footer-text-desktop";
+@import "../../desctop/main/footer/footer-messener-desktop";
+
+// navigation
+
+@import "../../desctop/main/navigation/navigation-desktop";
+@import "../../desctop/main/navigation/navigation-item-desktop";
+@import "../../desctop/main/navigation/navigation-backfacedesktop";

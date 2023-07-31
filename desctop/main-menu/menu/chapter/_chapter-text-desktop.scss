@@ -1,0 +1,20 @@
+@media screen and (min-width: $desktop) {
+    .chapter {
+        &__text {
+            font-size: 45px;
+
+            width: 605px;
+        }
+
+        &__weight,
+        &__price {
+            font-size: 60px;
+
+            width: 186px;
+        }
+
+        &__weight {
+            margin-right: 27px;
+        }
+    }
+}

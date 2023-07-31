@@ -1,0 +1,44 @@
+.chapter {
+    &__text-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        width: 200px;
+        margin-left: 15px;
+        color: $main-text-color;
+
+        @media screen and (max-width: 380px) {
+            width: 150px;
+        }
+    }
+
+    &__span {
+        color: $secondly-text-color;
+    }
+
+    // wight and price
+
+    &__price,
+    &__weight {
+        text-align: center;
+
+        font-family: Alegreya;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: $main-text-color;
+    }
+
+    &__weight {
+        width: 61px;
+
+        margin-right: 9px;
+    }
+
+    &__price {
+        width: 59px;
+    }
+}

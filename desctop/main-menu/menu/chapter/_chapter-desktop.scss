@@ -1,0 +1,7 @@
+.chapter {
+    @media screen and (min-width: $desktop) {
+        &__item:not(:last-child) {
+            margin-bottom: 45px;
+        }
+    }
+}

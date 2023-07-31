@@ -1,6 +1,6 @@
 body {
   background-color: #B1020E;
-  font-family: Inconsolata;
+  font-family: Inconsolata, sans-serif;
   font-size: 15px;
   font-weight: 400;
 }
@@ -60,11 +60,21 @@ a {
   font-weight: 800;
   color: #000000;
 }
+@media screen and (max-width: 360px) {
+  .hotbar__address {
+    font-size: 14px;
+  }
+}
 .hotbar__tel {
   font-family: Jost;
   font-size: 14px;
   font-weight: 500;
   color: #000000;
+}
+@media screen and (max-width: 360px) {
+  .hotbar__tel {
+    font-size: 12px;
+  }
 }
 .hotbar__btn-desktop, .hotbar__icon-desktop, .hotbar__address-desktop, .hotbar__tel-desktop {
   display: none;
@@ -201,7 +211,8 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 4% 0 7%;
+  overflow: scroll;
+  padding: 4% 4% 4% 7%;
   transition: transform 250ms ease-in;
   width: 70%;
   height: 100%;

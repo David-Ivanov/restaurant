@@ -1,0 +1,83 @@
+.chapter {
+    &__head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__name {
+        width: 200px;
+        padding: 3px 15px;
+
+        border-radius: 50px;
+        background-color: #A71112;
+
+        @media screen and (max-width: 380px) {
+            width: 150px;
+            font-size: 14px;
+        }
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    // text
+
+    &__title {
+        margin: 0;
+
+        font-family: Akshar, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: #F0A816;
+
+        @media screen and (max-width: 380px) {
+            font-size: 14px;
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+
+        font-family: Akshar;
+        font-size: 15px;
+        font-weight: 400;
+
+        color: $main-text-color;
+
+        @media screen and (max-width: 380px) {
+            font-size: 12px;
+        }
+    }
+}
+
+.price,
+.weight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 9px;
+
+    border-radius: 50px;
+    background-color: #A71112;
+
+    &__text {
+        margin: 0;
+
+        font-family: Aksha, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        color: $main-text-color;
+    }
+}
+
+.weight {
+    margin-right: 9px;
+}
+
+.special-title {
+    font-size: 14px;
+}

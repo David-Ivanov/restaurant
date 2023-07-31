@@ -1,0 +1,45 @@
+    @media screen and (min-width: $desktop) {
+        .chapter {
+
+            &__head {
+                margin-bottom: 45px;
+            }
+
+            // name
+
+            &__name {
+                padding: 6px 42px;
+
+                width: 605px;
+
+                border-radius: 150px;
+            }
+
+            &__title {
+                font-size: 60px;
+            }
+
+            &__subtitle {
+                font-size: 45px;
+            }
+        }
+
+        // weight & price
+
+        .weight,
+        .price {
+            width: 186px;
+
+            padding: 26px 27px;
+
+            border-radius: 150px;
+
+            &__text {
+                font-size: 60px;
+            }
+        }
+
+        .weight {
+            margin-right: 27px;
+        }
+    }

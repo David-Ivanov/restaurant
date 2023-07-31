@@ -81,13 +81,13 @@ a {
 }
 
 .map {
-  background-image: url(../images/map-bg-mobile.jpg);
+  background-image: url(../../images/map-bg-mobile.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .map {
-    background-image: url(../images/map-bg-mobile@2x.jpg);
+    background-image: url(../../images/map-bg-mobile@2x.jpg);
   }
 }
 
@@ -113,15 +113,16 @@ a {
 
 .menu {
   padding: 25px 20px;
-  background-image: url(../images/menu-bg-china-food-mobile.jpg);
+  background-image: url(../../images/main-menu-bg-mobile.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .menu {
-    background-image: url(../images/menu-bg-china-food-mobile@2x.jpg);
+    background-image: url(../../images/main-menu-bg-mobile@2x.jpg);
   }
 }
+
 .menu__title {
   text-align: center;
   margin: 0 0 30px;
@@ -131,35 +132,126 @@ a {
   color: #AF0909;
 }
 
-.menu__box {
-  position: relative;
+.chapter:not(:last-child) {
+  margin-bottom: 15px;
 }
-.menu__box:not(:last-child) {
-  margin-bottom: 20px;
+
+.chapter__head {
+  display: flex;
+  justify-content: space-between;
 }
-.menu__img {
-  width: 100%;
-  height: 161px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 20px;
+.chapter__name {
+  width: 200px;
+  padding: 3px 15px;
+  border-radius: 50px;
+  background-color: #A71112;
 }
-.menu__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@media screen and (max-width: 380px) {
+  .chapter__name {
+    width: 150px;
+    font-size: 14px;
+  }
+}
+.chapter__box {
+  display: flex;
+}
+.chapter__title {
   margin: 0;
-  text-align: center;
-  font-family: Alegreya;
-  font-size: 30px;
+  font-family: Akshar, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #F0A816;
+}
+@media screen and (max-width: 380px) {
+  .chapter__title {
+    font-size: 14px;
+  }
+}
+.chapter__subtitle {
+  margin: 0;
+  font-family: Akshar;
+  font-size: 15px;
   font-weight: 400;
   color: #FFFFFF;
 }
-@media screen and (min-width: 500px) {
-  .menu__text {
-    font-size: 45px;
+@media screen and (max-width: 380px) {
+  .chapter__subtitle {
+    font-size: 12px;
   }
+}
+
+.price,
+.weight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px;
+  border-radius: 50px;
+  background-color: #A71112;
+}
+.price__text,
+.weight__text {
+  margin: 0;
+  font-family: Aksha, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.weight {
+  margin-right: 9px;
+}
+
+.special-title {
+  font-size: 14px;
+}
+
+.chapter__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.chapter__text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chapter__text {
+  width: 200px;
+  margin-left: 15px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 380px) {
+  .chapter__text {
+    width: 150px;
+  }
+}
+.chapter__span {
+  color: #000000;
+}
+.chapter__price, .chapter__weight {
+  text-align: center;
+  font-family: Alegreya;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.chapter__weight {
+  width: 61px;
+  margin-right: 9px;
+}
+.chapter__price {
+  width: 59px;
+}
+
+.chapter__img {
+  display: block;
+  margin: 0 auto;
+  width: 188px;
+  border-radius: 20px;
+}
+
+.special-img {
+  width: 135px;
 }
 
 .footer {
@@ -343,13 +435,13 @@ a {
 }
 
 .map {
-  background-image: url(../images/map-bg-desktop.jpg);
+  background-image: url(../../images/map-bg-desktop.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 @media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .map {
-    background-image: url(../images/map-bg-desktop@2x.jpg);
+    background-image: url(../../images/map-bg-desktop@2x.jpg);
   }
 }
 
@@ -370,63 +462,84 @@ a {
 @media screen and (min-width: 1440px) {
   .menu {
     padding: 50px 106px 80px;
-    background-image: url(../images/menu-bg-china-food-desktop.jpg);
+    background-image: url(../../images/main-menu-bg-desktop.jpg);
   }
 }
 @media screen and (min-width: 1440px) and (min-device-pixel-ration: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
   .menu {
-    background-image: url(../images/menu-bg-china-food-desktop@2x.jpg);
+    background-image: url(../../images/main-menu-bg-desktop@2x.jpg);
   }
 }
+
 @media screen and (min-width: 1440px) {
-  .menu__position {
-    display: flex;
-  }
   .menu__title {
     font-size: 180px;
     margin-bottom: 134px;
   }
-  .menu__text {
-    font-size: 87px;
+}
+
+@media screen and (min-width: 1440px) {
+  .chapter__item:not(:last-child) {
+    margin-bottom: 45px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .menu__position {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  .chapter__head {
+    margin-bottom: 45px;
   }
-  .menu__img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .chapter__name {
+    padding: 6px 42px;
+    width: 605px;
+    border-radius: 150px;
+  }
+  .chapter__title {
+    font-size: 60px;
+  }
+  .chapter__subtitle {
+    font-size: 45px;
+  }
+  .weight,
+  .price {
+    width: 186px;
+    padding: 26px 27px;
+    border-radius: 150px;
+  }
+  .weight__text,
+  .price__text {
+    font-size: 60px;
+  }
+  .weight {
+    margin-right: 27px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .chapter__item:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .chapter__text {
+    font-size: 45px;
+    width: 605px;
+  }
+  .chapter__weight, .chapter__price {
+    font-size: 60px;
+    width: 186px;
+  }
+  .chapter__weight {
+    margin-right: 27px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .chapter__img {
+    width: 564px;
     border-radius: 60px;
   }
-  .menu__box {
-    width: 542px;
-    height: 397px;
+  .special {
+    width: 380px;
   }
 }
-@media screen and (min-width: 1440px) and (min-width: 2380px) {
-  .menu__box {
-    width: 800px;
-    height: 580px;
-  }
-  .menu__text {
-    font-size: 100px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .menu__box:nth-last-child(-n+2) {
-    margin-bottom: 0;
-  }
-  .menu__box:not(:nth-last-child(-n+2)) {
-    margin-bottom: 50px;
-  }
-}
-
 @media screen and (min-width: 1440px) {
   .footer {
     padding: 71px 0;
@@ -482,4 +595,4 @@ a {
     width: 110px;
     height: 110px;
   }
-}/*# sourceMappingURL=china-food.css.map */
+}/*# sourceMappingURL=main-menu.css.map */

@@ -1,0 +1,13 @@
+.menu {
+    @media screen and (min-width: $desktop) {
+        padding: 50px 106px 80px;
+
+        background-image: url(../../images/main-menu-bg-desktop.jpg);
+
+        @media screen and (min-device-pixel-ration: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(../../images/main-menu-bg-desktop@2x.jpg);
+        }
+    }
+}

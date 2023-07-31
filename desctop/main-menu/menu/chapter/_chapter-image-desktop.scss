@@ -1,0 +1,14 @@
+@media screen and (min-width: $desktop) {
+    .chapter {
+        &__img {
+            width: 564px;
+
+            border-radius: 60px;
+        }
+    }
+
+    .special {
+        width: 380px;
+    }
+
+}

@@ -8,7 +8,9 @@
     align-items: center;
     flex-wrap: wrap;
 
-    padding: 0 4% 0 7%;
+    overflow: scroll;
+
+    padding: 4% 4% 4% 7%;
 
     transition: transform 250ms ease-in;
 
