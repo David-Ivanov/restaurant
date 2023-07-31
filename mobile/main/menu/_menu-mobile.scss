@@ -3,7 +3,8 @@
 
     background-image: url(images/menu-bg-mobile.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size: 100%;
 
     @media screen and (min-device-pixel-ration: 2),
     screen and (min-resolution: 192dpi),
