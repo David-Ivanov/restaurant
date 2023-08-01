@@ -204,7 +204,12 @@ a {
 }
 
 .special-title {
-  font-size: 14px;
+  font-size: 12px;
+}
+@media screen and (max-width: 380px) {
+  .special-title {
+    font-size: 10px;
+  }
 }
 
 .chapter__item:not(:last-child) {
@@ -512,6 +517,9 @@ a {
   }
   .weight {
     margin-right: 27px;
+  }
+  .special-title {
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 1440px) {
