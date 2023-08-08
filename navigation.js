@@ -32,7 +32,14 @@ link.forEach((value) => {
         backface.classList.toggle("nav__backface--active");
         document.body.style.overflow = "scroll";
     });
-})
+});
+
+backface.addEventListener("click", function () {
+    nav.classList.toggle("nav--active");
+    backface.classList.toggle("nav__backface--active");
+    document.body.style.overflow = "scroll";
+});
+
 
 
 
