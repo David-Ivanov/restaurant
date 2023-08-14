@@ -1,0 +1,486 @@
+body {
+  background-color: #B1020E;
+  font-family: Inconsolata, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: block;
+  margin: 5px auto 10px auto;
+  width: 300px;
+}
+.logo__text {
+  text-align: center;
+  margin: 0 0 12px;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 800;
+  color: #FFD700;
+}
+
+.hotbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 100%;
+  height: 40px;
+  background-color: #EEAA21;
+}
+.hotbar__box {
+  display: flex;
+  align-items: center;
+}
+.hotbar__btn {
+  width: 30px;
+  height: 20px;
+  padding: 0;
+  margin-right: 1em;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.hotbar__icon {
+  width: 100%;
+  height: 100%;
+}
+.hotbar__address {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 800;
+  color: #000000;
+}
+@media screen and (max-width: 360px) {
+  .hotbar__address {
+    font-size: 14px;
+  }
+}
+.hotbar__tel {
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+@media screen and (max-width: 360px) {
+  .hotbar__tel {
+    font-size: 12px;
+  }
+}
+.hotbar__btn-desktop, .hotbar__icon-desktop, .hotbar__address-desktop, .hotbar__tel-desktop {
+  display: none;
+}
+
+.map {
+  background-image: url(../images/map-bg-mobile.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .map {
+    background-image: url(../images/map-bg-mobile@2x.jpg);
+  }
+}
+
+.map__title {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 0;
+  font-family: Kadwa;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.map {
+  padding-top: 45px;
+  padding-bottom: 85px;
+}
+.map__gps {
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.menu {
+  padding: 25px 20px;
+  background-image: url(../images/menu-bg-china-food-mobile.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-size: 100% 100%;
+}
+@media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .menu {
+    background-image: url(../images/menu-bg-china-food-mobile@2x.jpg);
+  }
+}
+.menu__title {
+  text-align: center;
+  margin: 0 0 30px;
+  font-family: Alegreya;
+  font-size: 60px;
+  font-weight: 400;
+  color: #AF0909;
+}
+
+.menu__box {
+  position: relative;
+}
+.menu__box:not(:last-child) {
+  margin-bottom: 20px;
+}
+.menu__img {
+  width: 100%;
+  height: 161px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.menu__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-align: center;
+  font-family: Alegreya;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 500px) {
+  .menu__text {
+    font-size: 45px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+.footer__title {
+  margin: 0 0 3px;
+  font-family: Akshar;
+  font-size: 17.897px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.footer__text {
+  margin: 0;
+  font-family: Akshar;
+  font-size: 10px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.messenger__text {
+  text-align: center;
+  margin: 0 0 3px;
+  font-family: Akshar;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000000;
+}
+.messenger__icon {
+  display: block;
+  margin: 0 auto 3px;
+  width: 28px;
+  height: 28px;
+  fill: #eeaa21;
+}
+.messenger__icon:hover {
+  fill: #FF0002;
+  stroke: #FF0002;
+}
+
+.nav {
+  position: fixed;
+  left: -70%;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: scroll;
+  padding: 4% 4% 4% 7%;
+  transition: transform 250ms ease-in;
+  width: 70%;
+  height: 100%;
+  background-color: #E79516;
+}
+
+.nav--active {
+  transform: translate(100%);
+}
+
+.nav__box {
+  width: 100%;
+}
+.nav__item {
+  padding: 3px 25px;
+  width: 100%;
+  border-radius: 50px;
+  background: #A71112;
+}
+.nav__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.nav__item:hover {
+  background-color: #FFB51F;
+}
+.nav__title {
+  margin: 0;
+  font-family: Akshar;
+  font-size: 20px;
+  font-weight: 400;
+  color: #F0A816;
+}
+.nav__item:hover .nav__title {
+  color: #B1020E;
+}
+.nav__text {
+  font-family: Akshar;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  color: #FFFFFF;
+}
+.nav__item:hover .nav__text {
+  color: #000000;
+}
+
+.nav__backface {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: end;
+  padding: 20px 20px 0 0;
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.31);
+}
+.nav__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+.nav__close {
+  width: 50px;
+  height: 50px;
+}
+.nav__backface--active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media screen and (min-width: 1440px) {
+  .logo {
+    width: 676px;
+  }
+  .logo__text {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hotbar {
+    height: 60px;
+    justify-content: space-between;
+  }
+  .hotbar__btn-desktop {
+    display: block;
+    width: 40px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .hotbar__icon-desktop {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .hotbar__address-desktop {
+    display: inline;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 800;
+    color: #000000;
+  }
+  .hotbar__tel-desktop {
+    display: inline;
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+  }
+  .hotbar__box, .hotbar__tel {
+    display: none;
+  }
+}
+
+.map {
+  background-image: url(../images/map-bg-desktop.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (min-device-pixel-ration: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .map {
+    background-image: url(../images/map-bg-desktop@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map__gps {
+    width: 540px;
+    height: 435px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .map__title {
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menu {
+    padding: 50px 106px 80px;
+    background-image: url(../images/menu-bg-china-food-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ration: 2), screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1440px) and (min-resolution: 192dpi), screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .menu {
+    background-image: url(../images/menu-bg-china-food-desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu__position {
+    display: flex;
+  }
+  .menu__title {
+    font-size: 180px;
+    margin-bottom: 134px;
+  }
+  .menu__text {
+    font-size: 87px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menu__position {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .menu__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 60px;
+  }
+  .menu__box {
+    width: 542px;
+    height: 397px;
+  }
+}
+@media screen and (min-width: 1440px) and (min-width: 2380px) {
+  .menu__box {
+    width: 800px;
+    height: 580px;
+  }
+  .menu__text {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .menu__box:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .menu__box:not(:nth-last-child(-n+2)) {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    padding: 71px 0;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer__title {
+    font-size: 50px;
+  }
+  .footer__text {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .messenger__text {
+    font-size: 50px;
+  }
+  .messenger__text:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .messenger__icon {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav__item {
+    padding: 9px 75px;
+    border-radius: 150px;
+  }
+  .nav__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .nav__title {
+    font-size: 60px;
+  }
+  .nav__text {
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav__btn {
+    width: 110px;
+    height: 110px;
+  }
+  .nav__close {
+    width: 110px;
+    height: 110px;
+  }
+}/*# sourceMappingURL=sushi.css.map */
