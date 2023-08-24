@@ -20,7 +20,7 @@
             <img class="logo" src="../images/logo.png" srcset="../images/logo.png 1x, ../images/logo@2.png 2x"
                 alt="logo">
         </a>
-        <h1 class="logo__text">китайська кухня</h1>
+        <p class="logo__text">китайська кухня</p>
     </header>
 
     <address class="hotbar">
@@ -47,6 +47,8 @@
 
     <main>
 
+        <h1 class="visually-hidden">China delicacy</h1>
+
         <section class="map">
             <h2 class="map__title">МИ ЗНАХОДИМОСЯ ТУТ</h2>
             <iframe class="map__gps"
@@ -56,36 +58,38 @@
         </section>
 
         <section class="menu">
+
             <h2 class="menu__title">меню</h2>
 
-            <div class="menu__position">
-                <div class="menu__box">
+            <ul class="menu__position">
+
+                <li class="menu__box">
                     <a href="./sushi-menu/rolls.html">
                         <img class="menu__img" src="../images/sushi-menu-img.jpg"
                             srcset="../images/sushi-menu-img.jpg 1x, ../images/sushi-menu-img@2x.jpg 2x" alt="sushi">
                         <p class="menu__text">РОЛИ</p>
                     </a>
-                </div>
+                </li>
 
 
-                <div class="menu__box">
+                <li class="menu__box">
                     <a href="./sushi-menu/maki.html">
                         <img class="menu__img" src="../images/maki-menu-img.jpg"
                             srcset="../images/maki-menu-img.jpg 1x, ../images/maki-menu-img@2x.jpg 2x" alt="sushi">
                         <p class="menu__text">МАКИ</p>
                     </a>
-                </div>
+                </li>
 
 
-                <div class="menu__box">
+                <li class="menu__box">
                     <a href="./sushi-menu/another.html">
                         <img class="menu__img" src="../images/another-img.jpg"
                             srcset="../images/another-img.jpg 1x, ../images/another-img@2x.jpg 2x" alt="sushi">
                         <p class="menu__text">ІНШЕ</p>
                     </a>
-                </div>
+                </li>
 
-            </div>
+            </ul>
 
         </section>
     </main>
@@ -93,7 +97,8 @@
     <footer class="footer">
         <div class="footer__box">
             <h2 class="footer__title">China delicacy</h2>
-            <p class="footer__text">Ресторан китайської кухні</p>
+            <p class="footer__text">Ресторан китайської кухні <br>
+                Супи, закуски, локшина, рис, суші, роли</p>
         </div>
         <div class="messenger">
             <p class="messenger__text">ЛАСКОВО ПРОСИМО У НАШ</p>
@@ -108,32 +113,32 @@
     </footer>
 
     <div class="nav">
-        <div class="nav__box">
+        <ul class="nav__box">
 
-            <div class="nav__item">
+            <li class="nav__item">
                 <a class="nav__link" href="./sushi-menu/rolls.html">
-                    <h1 class="nav__title">РОЛИ</h1>
+                    <p class="nav__title">РОЛИ</p>
                     <p class="nav__text">Rolls</p>
                 </a>
-            </div>
+            </li>
 
 
-            <div class="nav__item last">
+            <li class="nav__item">
                 <a class="nav__link" href="./sushi-menu/maki.html">
-                    <h1 class="nav__title">МАКІ</h1>
+                    <p class="nav__title">МАКІ</p>
                     <p class="nav__text">Maki</p>
                 </a>
-            </div>
+            </li>
 
-            <div class="nav__item last">
+            <li class="nav__item last">
                 <a class="nav__link" href="./sushi-menu/another.html">
-                    <h1 class="nav__title">ІНШЕ</h1>
+                    <p class="nav__title">ІНШЕ</p>
                     <p class="nav__text">Another</p>
                 </a>
-            </div>
+            </li>
 
 
-        </div>
+        </ul>
     </div>
     <div class="nav__backface">
         <button class="nav__btn">

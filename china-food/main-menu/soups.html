@@ -20,7 +20,7 @@
             <img class="logo" src="../../images/logo.png" srcset="../../images/logo.png 1x, ../../images/logo@2.png 2x"
                 alt="logo">
         </a>
-        <h1 class="logo__text">китайська кухня</h1>
+        <p class="logo__text">китайська кухня</p>
     </header>
 
     <address class="hotbar">
@@ -46,6 +46,9 @@
     </address>
 
     <main>
+
+        <h1 class="visually-hidden">China delicacy</h1>
+
         <section class="map">
             <h2 class="map__title">МИ ЗНАХОДИМОСЯ ТУТ</h2>
             <iframe class="map__gps"
@@ -57,10 +60,10 @@
         <section class="menu">
             <h2 class="menu__title">меню</h2>
 
-            <div class="chapter">
-                <div class="chapter__head">
+            <ul class="chapter">
+                <li class="chapter__head">
                     <div class="chapter__name" id="soup">
-                        <h2 class="chapter__title">Суп</h2>
+                        <h3 class="chapter__title">Суп</h3>
                         <p class="chapter__subtitle">Soup · 汤</p>
                     </div>
                     <div class="chapter__box">
@@ -71,9 +74,9 @@
                             <p class="price__text">Ціна</p>
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Кисло-гострий суп <span class="chapter__span">Hot and sour soup
                                 酸辣汤</span>
@@ -86,9 +89,9 @@
 
                     <img class="chapter__img" src="../../images/soup-img-1.jpg" alt="soup"
                         srcset="../../images/soup-img-1.jpg 1x, ../../images/soup-img-1@2x.jpg 2x">
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Вонтон суп <span class="chapter__span">Wonton stew 馄炖汤
                             </span>
@@ -101,9 +104,9 @@
 
                     <img class="chapter__img special-img" src="../../images/soup-img-2.jpg" alt="soup"
                         srcset="../../images/soup-img-2.jpg 1x, ../../images/soup-img-2@2x.jpg 2x">
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Суп з морепродуктів <span class="chapter__span">Seafood Soup
                                 海鲜汤</span>
@@ -117,11 +120,11 @@
 
                     <img class="chapter__img" src="../../images/soup-img-3.jpg" alt="soup"
                         srcset="../../images/soup-img-3.jpg 1x, ../../images/soup-img-3@2x.jpg 2x">
-                </div>
+                </li>
 
-                <div class="chapter__head" id="noodles-soup">
-                    <div class="chapter__name">
-                        <h2 class="chapter__title">Суп з локшиною</h2>
+                <li class="chapter__head">
+                    <div class="chapter__name" id="noodles-soup">
+                        <h3 class="chapter__title">Суп з локшиною</h3>
                         <p class="chapter__subtitle">Noodle Soup · 汤面类</p>
                     </div>
 
@@ -133,9 +136,9 @@
                             <p class="price__text">Ціна</p>
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Яловичий суп-локшина <span class="chapter__span">Beef noodle soup
                                 牛肉面</span>
@@ -149,9 +152,9 @@
 
                     <img class="chapter__img special-img" src="../../images/soup-img-4.jpg" alt="soup"
                         srcset="../../images/soup-img-4.jpg 1x, ../../images/soup-img-4@2x.jpg 2x">
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Суп з локшиною Том Ям (локшина з морепродуктів) <span
                                 class="chapter__span">Tom Yum Noodle Soup (Seafood Noodles) 冬阴功汤面（海鲜面)</span>
@@ -165,16 +168,17 @@
 
                     <img class="chapter__img" src="../../images/soup-china-food.jpg" alt="soup"
                         srcset="../../images/soup-china-food 1x, ../../images/soup-china-food@2x.jpg 2x">
-                </div>
+                </li>
 
-            </div>
+            </ul>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer__box">
             <h2 class="footer__title">China delicacy</h2>
-            <p class="footer__text">Ресторан китайської кухні</p>
+            <p class="footer__text">Ресторан китайської кухні <br>
+                Супи, закуски, локшина, рис, суші, роли</p>
         </div>
         <div class="messenger">
             <p class="messenger__text">ЛАСКОВО ПРОСИМО У НАШ</p>
@@ -189,24 +193,24 @@
     </footer>
 
     <div class="nav">
-        <div class="nav__box">
+        <ul class="nav__box">
 
-            <div class="nav__item">
+            <li class="nav__item">
                 <a class="nav__link" href="#soup">
-                    <h1 class="nav__title">Супи</h1>
+                    <p class="nav__title">Супи</p>
                     <p class="nav__text">Soup · 汤</p>
                 </a>
-            </div>
+            </li>
 
 
-            <div class="nav__item last">
+            <li class="nav__item last">
                 <a class="nav__link" href="#noodles-soup">
-                    <h1 class="nav__title">Суп з локшиною</h1>
+                    <p class="nav__title">Суп з локшиною</p>
                     <p class="nav__text">Noodle Soup · 汤面类</p>
                 </a>
-            </div>
+            </li>
 
-        </div>
+        </ul>
 
     </div>
     <div class="nav__backface">

@@ -20,7 +20,7 @@
             <img class="logo" src="../../images/logo.png" srcset="../../images/logo.png 1x, ../../images/logo@2.png 2x"
                 alt="logo">
         </a>
-        <h1 class="logo__text">китайська кухня</h1>
+        <p class="logo__text">китайська кухня</p>
     </header>
 
     <address class="hotbar">
@@ -46,6 +46,9 @@
     </address>
 
     <main>
+
+        <h1 class="visually-hidden">China delicacy</h1>
+
         <section class="map">
             <h2 class="map__title">МИ ЗНАХОДИМОСЯ ТУТ</h2>
             <iframe class="map__gps"
@@ -57,10 +60,11 @@
         <section class="menu">
             <h2 class="menu__title">меню</h2>
 
-            <div class="chapter">
-                <div class="chapter__head">
+            <ul class="chapter">
+
+                <li class="chapter__head">
                     <div class="chapter__name" id="fried-rice">
-                        <h2 class="chapter__title">Смажений рис</h2>
+                        <h3 class="chapter__title">Смажений рис</h3>
                         <p class="chapter__subtitle">Fried rice · 炒饭</p>
                     </div>
                     <div class="chapter__box">
@@ -71,9 +75,9 @@
                             <p class="price__text">Ціна</p>
                         </div>
                     </div>
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Смажений рис з куркою <span class="chapter__span">Chicken Fried Rice
                                 鸡肉炒饭</span>
@@ -86,9 +90,9 @@
 
                     <img class="chapter__img" src="../../images/fried-rice-img-1.jpg" alt="fried-rice"
                         srcset="../../images/fried-rice-img-1.jpg 1x, ../../images/fried-rice-img-1@2x.jpg 2x">
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Смажений рис з яловичиною <span class="chapter__span">Beef fried rice
                                 牛肉炒饭</span>
@@ -101,9 +105,9 @@
 
                     <img class="chapter__img" src="../../images/fried-rice-img-2.jpg" alt="fried-rice"
                         srcset="../../images/fried-rice-img-2.jpg 1x, ../../images/fried-rice-img-2@2x.jpg 2x">
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Смажений рис з креветками <span class="chapter__span">Shrimp Fried Rice
                                 虾仁炒饭</span>
@@ -116,9 +120,9 @@
 
                     <img class="chapter__img" src="../../images/fried-rice-img-3.jpg" alt="fried-rice"
                         srcset="../../images/fried-rice-img-3.jpg 1x, ../../images/fried-rice-img-3@2x.jpg 2x">
-                </div>
+                </li>
 
-                <div class="chapter__item">
+                <li class="chapter__item">
                     <div class="chapter__text-box">
                         <p class="chapter__text">Смажений рис з овочами <span class="chapter__span">Fried Rice with
                                 vegetables 蔬菜炒饭</span>
@@ -131,9 +135,9 @@
 
                     <img class="chapter__img" src="../../images/fried-rice-img-4.jpg" alt="fried-rice"
                         srcset="../../images/fried-rice-img-4.jpg 1x, ../../images/fried-rice-img-4@2x.jpg 2x">
-                </div>
+                </li>
 
-            </div>
+            </ul>
 
         </section>
     </main>
@@ -141,7 +145,8 @@
     <footer class="footer">
         <div class="footer__box">
             <h2 class="footer__title">China delicacy</h2>
-            <p class="footer__text">Ресторан китайської кухні</p>
+            <p class="footer__text">Ресторан китайської кухні <br>
+                Супи, закуски, локшина, рис, суші, роли</p>
         </div>
         <div class="messenger">
             <p class="messenger__text">ЛАСКОВО ПРОСИМО У НАШ</p>
@@ -156,16 +161,16 @@
     </footer>
 
     <div class="nav">
-        <div class="nav__box">
+        <ul class="nav__box">
 
             <div class="nav__item">
                 <a class="nav__link" href="#fried-rice">
-                    <h1 class="nav__title">Смажений рис</h1>
+                    <p class="nav__title">Смажений рис</p>
                     <p class="nav__text">Fried rice · 炒饭</p>
                 </a>
             </div>
 
-        </div>
+        </ul>
 
     </div>
     <div class="nav__backface">

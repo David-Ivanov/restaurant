@@ -15,10 +15,12 @@
 </head>
 
 <body>
+
     <header>
         <img class="logo" src="images/logo.png" srcset="images/logo.png 1x, images/logo@2.png 2x" alt="logo">
-        <h1 class="logo__text">китайська кухня</h1>
+        <p class="logo__text">китайська кухня</p>
     </header>
+
     <address class="hotbar">
         <div class="hotbar__box">
             <button class="hotbar__btn">
@@ -40,7 +42,11 @@
 
         <a class="hotbar__tel" href="tel:+380637685788">+380 (63) 768 57 88</a>
     </address>
+
     <main>
+
+        <h1 class="visually-hidden">China delicacy</h1>
+
         <section class="map">
             <h2 class="map__title">МИ ЗНАХОДИМОСЯ ТУТ</h2>
             <iframe class="map__gps"
@@ -48,34 +54,39 @@
                 width="180" height="145" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
+
         <section class="menu">
             <h2 class="menu__title">меню</h2>
 
-            <div class="menu__position">
-                <div class="menu__box">
+            <ul class="menu__position">
+
+                <li class="menu__box">
                     <a href="china-food/china-food.html">
                         <img class="menu__img" src="images/china-food.jpg"
                             srcset="images/china-food.jpg 1x, images/china-food@2x.jpg 2x" alt="china-food">
                         <p class="menu__text">КИТАЙСЬКА КУХНЯ</p>
                     </a>
-                </div>
+                </li>
 
 
-                <div class="menu__box">
+                <li class="menu__box">
                     <a href="./sushi/sushi.html">
                         <img class="menu__img" src="images/sushi.jpg"
                             srcset="images/sushi.jpg 1x, images/sushi@2x.jpg 2x" alt="sushi">
                         <p class="menu__text">СУШІ</p>
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
 
         </section>
+
     </main>
+
     <footer class="footer">
         <div class="footer__box">
             <h2 class="footer__title">China delicacy</h2>
-            <p class="footer__text">Ресторан китайської кухні</p>
+            <p class="footer__text">Ресторан китайської кухні <br>
+                Супи, закуски, локшина, рис, суші, роли</p>
         </div>
         <div class="messenger">
             <p class="messenger__text">ЛАСКОВО ПРОСИМО У НАШ</p>
@@ -88,26 +99,28 @@
             <p class="messenger__text">INSTAGRAM</p>
         </div>
     </footer>
-    <div class="nav">
-        <div class="nav__box">
 
-            <div class="nav__item">
+    <div class="nav">
+        <ul class="nav__box">
+
+            <li class="nav__item">
                 <a class="nav__link" href="china-food/china-food.html">
-                    <h1 class="nav__title">КИТАЙСЬКА КУХНЯ</h1>
+                    <p class="nav__title">КИТАЙСЬКА КУХНЯ</p>
                     <p class="nav__text">China food</p>
                 </a>
-            </div>
+            </li>
 
 
-            <div class="nav__item last">
+            <li class="nav__item last">
                 <a class="nav__link" href="">
-                    <h1 class="nav__title">СУШІ</h1>
+                    <p class="nav__title">СУШІ</p>
                     <p class="nav__text">Sushi</p>
                 </a>
-            </div>
-        </div>
+            </li>
+        </ul>
 
     </div>
+
     <div class="nav__backface">
         <button class="nav__btn">
             <svg class="nav__close">
@@ -115,6 +128,7 @@
             </svg>
         </button>
     </div>
+
     <script src="navigation.js"></script>
 </body>
 
